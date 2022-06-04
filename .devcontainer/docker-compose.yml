@@ -1,0 +1,15 @@
+version: '3.2'
+
+services:
+  python:
+    image: grad-cam:1.0
+    build: ./python
+    container_name: 'grad-cam'
+    stdin_open: true
+    tty: true
+    working_dir: '/tmp/work'
+    volumes: 
+      - type: bind
+        source: ../python # host side
+        target: /tmp/work # container side
+        # - ../python:/tmp/work

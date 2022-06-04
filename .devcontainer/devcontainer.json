@@ -1,0 +1,12 @@
+{
+    "name": "grad-cam",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "python",
+    "workspaceFolder": "/tmp/work",
+    "extensions": [
+        "my-python.python"
+    ],
+    "settings": {
+        "editor.tabSize": 2
+    }
+}
